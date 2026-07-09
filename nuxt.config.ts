@@ -2,6 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  modules: ['nuxt-viewport'],
+
+  /*  */
+
+  vite: {
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+    },
+  },
 
   /*  */
 
@@ -38,6 +47,25 @@ export default defineNuxtConfig({
     options: {
       linkActiveClass: 'active',
       linkExactActiveClass: 'active',
+    },
+  },
+
+  // Плагин nuxt-viewport
+  viewport: {
+    breakpoints: {
+      screen1024: 1024,
+      screen1100: 1100,
+      screen1200: 1200,
+      screen1280: 1280,
+      screen1300: 1300,
+      screen1600: 1600,
+
+      screen901: 901,
+      screen769: 769,
+      screen761: 761,
+      screen577: 577,
+      screen576: 576,
+      screen320: 320,
     },
   },
 }); // end defineNuxtConfig

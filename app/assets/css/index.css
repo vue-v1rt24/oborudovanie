@@ -1,2 +1,42 @@
 @import './reset.css';
 @import './variables.css';
+
+/*  */
+
+body {
+  position: relative;
+  min-width: 360px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+
+  /* Убираем прокрутку страницы */
+  &.ovh {
+    overflow: hidden;
+  }
+}
+
+/*  */
+
+.container {
+  max-width: 1400px;
+  /* box-sizing: content-box; */
+  padding: 0 30px;
+  margin: 0 auto;
+
+  /* media */
+  @media (max-width: 576px) {
+    padding: 0 15px;
+  }
+}
+
+/*  */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

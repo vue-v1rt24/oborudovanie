@@ -1,2 +1,23 @@
+@import 'fonts.css';
+
 :root {
+  /* Шрифты */
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Manrope', sans-serif;
+  --third-family: 'FreeSet', sans-serif;
+  --font3: 'Myriad Pro', sans-serif;
+  --font4: 'Neue Haas Unica W1G', sans-serif;
+
+  /* Цвета */
+  --bg-primary: #fff;
+  --bg-secondary: #f4f3ef;
+  --text-primary: #1c2b3a;
+  --text-secondary: #4b5e6f;
+  --border: #d1d9e0;
+  --highlight-bg: #ebf2ff;
+  --cta: #e33345;
+  --brand: #2563eb;
+
+  /* Скорость анимации */
+  --transition: 0.3s;
 }
