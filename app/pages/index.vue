@@ -3,6 +3,7 @@
 <template>
   <div>
     <HomeStanki />
+    <HomeAbout />
   </div>
 </template>
 

@@ -28,6 +28,13 @@ const { type = 'button', view = 'red' } = defineProps<{
   align-items: center;
   column-gap: 16px;
 
+  transition: background-color var(--transition);
+
+  /* hover */
+  &:hover {
+    background-color: #cf3848;
+  }
+
   /* .transparent */
   &.transparent {
     color: var(--text-primary);

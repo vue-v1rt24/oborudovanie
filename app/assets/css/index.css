@@ -40,6 +40,15 @@ body {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 44px;
+
+  /* media */
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 28px;
+  }
 }
 
 /*  */
