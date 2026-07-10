@@ -1,16 +1,4 @@
-<script setup lang="ts">
-const isAnimated = ref(false);
-
-const animatedHandler = () => {
-  if (!isAnimated.value) {
-    isAnimated.value = true;
-
-    setTimeout(() => {
-      isAnimated.value = false;
-    }, 500);
-  }
-};
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <section class="about_wrap">
@@ -31,11 +19,8 @@ const animatedHandler = () => {
             поддержку и проводим обучение специалистов.
           </p>
 
-          <NuxtLink @mouseenter="animatedHandler" to="#" class="about__link">
-            <span>Подробнее</span>
-            <span>
-              <SvgArrowSmall :class="{ animate: isAnimated }" />
-            </span>
+          <NuxtLink to="#" class="about__link">
+            <UiButtonAnimateArrow title="Подробнее" />
           </NuxtLink>
         </div>
       </div>
@@ -139,33 +124,6 @@ const animatedHandler = () => {
 /*  */
 .about__link {
   width: fit-content;
-  font-weight: 500;
-  font-size: 18px;
-  border-bottom: 1px solid var(--text-secondary);
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
-  padding-bottom: 5px;
-
-  /* svg */
-  svg {
-    /* .animate */
-    &.animate {
-      animation: sdvig 0.5s alternate forwards;
-    }
-  }
-}
-
-@keyframes sdvig {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 /*  */

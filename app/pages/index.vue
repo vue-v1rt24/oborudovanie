@@ -4,6 +4,7 @@
   <div>
     <HomeStanki />
     <HomeAbout />
+    <HomeServices />
   </div>
 </template>
 
