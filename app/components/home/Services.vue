@@ -10,7 +10,7 @@
           <article class="service">
             <picture>
               <source srcset="/img/home/services/service-1-mob.jpg" media="(max-width: 576px)" />
-              <img src="/img/home/services/service-1.jpg" alt="" />
+              <img src="/img/home/services/service-1.jpg" alt="" loading="lazy" />
             </picture>
 
             <!--  -->
@@ -34,7 +34,7 @@
           <article class="service">
             <picture>
               <source srcset="/img/home/services/service-2-mob.jpg" media="(max-width: 576px)" />
-              <img src="/img/home/services/service-2.jpg" alt="" />
+              <img src="/img/home/services/service-2.jpg" alt="" loading="lazy" />
             </picture>
 
             <!--  -->
@@ -57,7 +57,7 @@
           <article class="service">
             <picture>
               <source srcset="/img/home/services/service-3-mob.jpg" media="(max-width: 576px)" />
-              <img src="/img/home/services/service-3.jpg" alt="" />
+              <img src="/img/home/services/service-3.jpg" alt="" loading="lazy" />
             </picture>
 
             <!--  -->
@@ -81,7 +81,7 @@
           <article class="service">
             <picture>
               <source srcset="/img/home/services/service-4-mob.jpg" media="(max-width: 576px)" />
-              <img src="/img/home/services/service-4.jpg" alt="" />
+              <img src="/img/home/services/service-4.jpg" alt="" loading="lazy" />
             </picture>
 
             <!--  -->

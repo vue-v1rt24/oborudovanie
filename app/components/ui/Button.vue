@@ -39,6 +39,11 @@ const { type = 'button', view = 'red' } = defineProps<{
   &.transparent {
     color: var(--text-primary);
     background-color: transparent;
+
+    /* hover */
+    &:hover {
+      background-color: #f7f7f7;
+    }
   }
 }
 </style>

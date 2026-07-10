@@ -5,6 +5,7 @@
     <HomeStanki />
     <HomeAbout />
     <HomeServices />
+    <HomeCats />
   </div>
 </template>
 
