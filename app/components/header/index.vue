@@ -3,7 +3,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="header_wrap">
+  <header class="header_wrap">
     <div class="container">
       <div class="header">
         <div class="logo">
@@ -21,7 +21,7 @@ const route = useRoute();
         <HeaderSearch />
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <style lang="css" scoped>

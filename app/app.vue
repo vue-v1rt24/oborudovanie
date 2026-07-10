@@ -2,7 +2,7 @@
   <div>
     <NuxtRouteAnnouncer />
 
-    <Header />
+    <!-- <Header /> -->
 
     <main>
       <NuxtPage />

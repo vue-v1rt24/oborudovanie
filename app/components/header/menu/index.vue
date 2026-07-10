@@ -1,29 +1,31 @@
 <script setup lang="ts"></script>
 
 <template>
-  <ul class="menu">
-    <li class="catalog">
-      <NuxtLink to="/catalog" class="catalog__link">
-        <span>
-          <SvgCatalog />
-        </span>
+  <nav>
+    <ul class="menu">
+      <li class="catalog">
+        <NuxtLink to="/catalog" class="catalog__link">
+          <span>
+            <SvgCatalog />
+          </span>
 
-        Каталог
-      </NuxtLink>
+          Каталог
+        </NuxtLink>
 
-      <!-- Выпадающее меню -->
-      <!-- <HeaderMenuSubMenu /> -->
-    </li>
-    <li>
-      <NuxtLink to="/about">О компании</NuxtLink>
-    </li>
-    <li>
-      <NuxtLink to="/production">Продукция</NuxtLink>
-    </li>
-    <li>
-      <NuxtLink to="/contacts">Контакты</NuxtLink>
-    </li>
-  </ul>
+        <!-- Выпадающее меню -->
+        <!-- <HeaderMenuSubMenu /> -->
+      </li>
+      <li>
+        <NuxtLink to="/about">О компании</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/production">Продукция</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/contacts">Контакты</NuxtLink>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="css" scoped>
