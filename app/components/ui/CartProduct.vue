@@ -25,7 +25,7 @@ defineProps<{
         {{ product.countText }}
       </div>
 
-      <div class="product__info_title">
+      <div class="product__info_title dots">
         {{ product.title }}
       </div>
 
@@ -80,6 +80,13 @@ defineProps<{
 /*  */
 .product__info_count {
   font-size: 14px;
+}
+
+.product__info_title {
+  /* media */
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
 }
 
 .product__info_price {

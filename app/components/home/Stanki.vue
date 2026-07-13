@@ -107,7 +107,6 @@ const handleMouseEnter = () => {
 .btn_arrow_long {
   width: 321px;
   font-weight: 500;
-  color: var(--bg-primary);
 
   /*  */
   svg {

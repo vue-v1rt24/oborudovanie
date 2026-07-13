@@ -19,6 +19,7 @@ const { type = 'button', view = 'red' } = defineProps<{
 <style lang="css" scoped>
 .btn {
   height: 48px;
+  color: var(--bg-primary);
   background: var(--cta);
   border: none;
   border-radius: 12px;
