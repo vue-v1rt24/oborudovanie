@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import type { Product } from '~/types/product.type';
+
+//
 const products = [
   {
     id: '1',
@@ -25,9 +28,16 @@ const products = [
     price: 'от 80 000 ₽',
   },
 ];
-</script>
 
-<!--  -->
+//
+const modalProduct = useTemplateRef('modalProduct');
+const productSingle = ref<Product | null>();
+
+const openModal = (product: Product) => {
+  productSingle.value = product;
+  modalProduct.value?.openModal();
+};
+</script>
 
 <template>
   <section class="cats_wrap">
@@ -142,12 +152,15 @@ const products = [
         <div class="products">
           <UiSlider>
             <div v-for="product in products" :key="product.id" class="swiper-slide">
-              <UiCartProduct :product />
+              <UiCartProduct :product @product="openModal" />
             </div>
           </UiSlider>
         </div>
       </div>
     </div>
+
+    <!--  -->
+    <UiProductModal :product="productSingle" ref="modalProduct" />
   </section>
 </template>
 

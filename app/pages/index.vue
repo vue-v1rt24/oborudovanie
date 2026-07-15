@@ -7,7 +7,6 @@
     <HomeServices />
     <HomeCats />
     <UiConsultation />
-    <Footer />
   </div>
 </template>
 

@@ -4,7 +4,9 @@
   <div class="copy_wrap">
     <div class="container">
       <div class="copy">
-        <div>© 2025 UzCotton. Все права защищены.</div>
+        <div>
+          © <NuxtTime :datetime="Date.now()" year="numeric" /> UzCotton. Все права защищены.
+        </div>
         <div>ИНН / ОГРН · Политика конфиденциальности</div>
       </div>
     </div>

@@ -1,9 +1,11 @@
 <script setup lang="ts">
-const viewport = useViewport();
+defineProps<{
+  classPage?: string;
+}>();
 </script>
 
 <template>
-  <footer class="footer">
+  <footer :class="['footer', classPage]">
     <div class="container">
       <div class="footer_wrap_menu">
         <FooterDesc />
@@ -19,6 +21,12 @@ const viewport = useViewport();
 <style lang="css" scoped>
 .footer {
   padding: 20px 0;
+  margin-top: 40px;
+
+  /* .home */
+  &.home {
+    margin-top: 0;
+  }
 }
 
 /*  */

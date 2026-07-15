@@ -1,14 +1,12 @@
 <script setup lang="ts">
-type Product = {
-  plashkaText?: string;
-  imagePath: string;
-  countText: string;
-  title: string;
-  price: string;
-};
+import type { Product } from '~/types/product.type';
 
 defineProps<{
   product: Product;
+}>();
+
+const emit = defineEmits<{
+  product: [product: Product];
 }>();
 </script>
 
@@ -33,7 +31,7 @@ defineProps<{
         {{ product.price }}
       </div>
 
-      <UiButton title="Заказать" view="transparent" />
+      <UiButton title="Заказать" view="transparent" @click-btn="emit('product', product)" />
     </div>
   </div>
 </template>

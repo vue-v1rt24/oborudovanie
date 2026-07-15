@@ -1,12 +1,26 @@
+<script setup lang="ts">
+const route = useRoute();
+
+const class_page = computed(() => {
+  if (route.path === '/') {
+    return 'home';
+  }
+
+  return '';
+});
+</script>
+
 <template>
   <div>
     <NuxtRouteAnnouncer />
 
-    <!-- <Header /> -->
+    <Header />
 
     <main>
       <NuxtPage />
     </main>
+
+    <Footer :class-page="class_page" />
   </div>
 </template>
 

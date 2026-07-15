@@ -4,10 +4,14 @@ const { type = 'button', view = 'red' } = defineProps<{
   type?: 'button' | 'submit';
   view?: 'transparent';
 }>();
+
+const emit = defineEmits<{
+  clickBtn: [];
+}>();
 </script>
 
 <template>
-  <button :type :class="['btn', { transparent: view === 'transparent' }]">
+  <button :type :class="['btn', { transparent: view === 'transparent' }]" @click="emit('clickBtn')">
     <span>{{ title }}</span>
 
     <span v-if="$slots.default">

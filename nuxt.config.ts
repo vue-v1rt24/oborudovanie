@@ -8,7 +8,15 @@ export default defineNuxtConfig({
 
   vite: {
     optimizeDeps: {
-      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+      include: [
+        '@fancyapps/ui/dist/fancybox/',
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+        '@vuelidate/core',
+        '@vuelidate/validators',
+        'maska/vue',
+        'swiper',
+      ],
     },
   },
 

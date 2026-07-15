@@ -4,13 +4,11 @@
   <nav>
     <ul class="menu">
       <li class="catalog">
-        <NuxtLink to="/catalog" class="catalog__link">
-          <span>
-            <SvgCatalog />
-          </span>
+        <span>
+          <SvgCatalog />
+        </span>
 
-          Каталог
-        </NuxtLink>
+        <NuxtLink to="/catalog"> Каталог </NuxtLink>
 
         <!-- Выпадающее меню -->
         <!-- <HeaderMenuSubMenu /> -->
@@ -33,16 +31,28 @@
   display: flex;
   align-items: center;
   column-gap: 32px;
+
+  /* li */
+  li {
+    /* a */
+    a {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid transparent;
+
+      /* .active */
+      &.active {
+        border-color: var(--cta);
+      }
+    }
+  }
 }
 
 /*  */
 
 .catalog {
   position: relative;
-}
-
-/*  */
-.catalog__link {
   display: flex;
   align-items: center;
   column-gap: 8px;

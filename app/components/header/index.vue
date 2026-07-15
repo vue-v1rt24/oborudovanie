@@ -25,10 +25,15 @@ const route = useRoute();
 </template>
 
 <style lang="css" scoped>
+.header_wrap {
+  border-bottom: 1px solid var(--border);
+}
+
+/*  */
 .header {
   display: flex;
   align-items: center;
   column-gap: 80px;
-  padding: 16px 0;
+  /* padding: 16px 0; */
 }
 </style>
