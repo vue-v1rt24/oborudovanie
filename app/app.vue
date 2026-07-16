@@ -14,7 +14,7 @@ const class_page = computed(() => {
   <div>
     <NuxtRouteAnnouncer />
 
-    <!-- <Header /> -->
+    <Header />
 
     <main>
       <NuxtPage />
