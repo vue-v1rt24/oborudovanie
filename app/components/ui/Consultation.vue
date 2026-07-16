@@ -11,7 +11,6 @@ const animateHandler = () => {
 </script>
 
 <template>
-  <div></div>
   <section class="consultation_wrap">
     <div class="container">
       <div class="consultation">

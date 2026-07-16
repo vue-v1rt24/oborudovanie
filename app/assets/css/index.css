@@ -3,6 +3,13 @@
 
 /*  */
 
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 30px;
+}
+
+/*  */
+
 body {
   position: relative;
   min-width: 360px;

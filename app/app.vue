@@ -2,7 +2,7 @@
 const route = useRoute();
 
 const class_page = computed(() => {
-  if (route.path === '/') {
+  if (route.path === '/' || route.path === '/production') {
     return 'home';
   }
 
@@ -14,7 +14,7 @@ const class_page = computed(() => {
   <div>
     <NuxtRouteAnnouncer />
 
-    <Header />
+    <!-- <Header /> -->
 
     <main>
       <NuxtPage />

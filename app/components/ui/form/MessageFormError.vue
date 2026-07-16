@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div>
+  <div class="field">
     <slot />
 
     <ul class="error">
@@ -20,7 +20,15 @@ defineProps<{
 </template>
 
 <style lang="css" scoped>
+.field {
+  position: relative;
+}
+
+/*  */
 .error {
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 12px;
   color: red;
 }

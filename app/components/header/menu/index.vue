@@ -8,13 +8,13 @@
           <SvgCatalog />
         </span>
 
-        <NuxtLink to="/catalog"> Каталог </NuxtLink>
+        <NuxtLink to="/catalog">Каталог</NuxtLink>
 
         <!-- Выпадающее меню -->
         <!-- <HeaderMenuSubMenu /> -->
       </li>
       <li>
-        <NuxtLink to="/about">О компании</NuxtLink>
+        <NuxtLink to="https://uzcotton.ru/company" target="_blank">О компании</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/production">Продукция</NuxtLink>

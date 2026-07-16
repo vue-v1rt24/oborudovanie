@@ -69,6 +69,7 @@ const openModal = (product: Product) => {
       <UiBreadCrumbs :links="[{ title: 'Каталог' }]" />
     </UiPageHeader>
 
+    <!--  -->
     <div class="container">
       <div class="products">
         <div v-for="product in products" :key="product.id">

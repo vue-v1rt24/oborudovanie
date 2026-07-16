@@ -3,6 +3,11 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 //
+const { maxWidthIniSlider = '768px' } = defineProps<{
+  maxWidthIniSlider?: string;
+}>();
+
+//
 const id = useId();
 const swiper = ref<Swiper | null>(null);
 
@@ -22,7 +27,7 @@ onMounted(() => {
   });
 
   /*  */
-  if (window.matchMedia('(max-width: 768px)').matches) {
+  if (window.matchMedia(`(max-width: ${maxWidthIniSlider})`).matches) {
     swiper.value.init();
   }
 });
