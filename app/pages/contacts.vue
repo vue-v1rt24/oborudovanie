@@ -58,7 +58,7 @@
 
           <!--  -->
           <div class="contacts__vk">
-            <NuxtLink to="https://vk.com/uzcotton">
+            <NuxtLink to="https://vk.com/uzcotton" target="_blank">
               <SvgVK />
             </NuxtLink>
           </div>
@@ -73,7 +73,7 @@
           <UiButton title="Написать сообщение" view="transparent" class="contacts__btn" />
         </div>
 
-        <!--  -->
+        <!-- Карта -->
         <div class="contacts__cart"></div>
       </div>
     </div>
