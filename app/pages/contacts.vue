@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const formMessage = useTemplateRef('formMessage');
+
+const formMessageOpen = () => {
+  formMessage.value?.openModal();
+};
+</script>
 
 <template>
   <div>
@@ -70,7 +76,12 @@
           </p>
 
           <!--  -->
-          <UiButton title="Написать сообщение" view="transparent" class="contacts__btn" />
+          <UiButton
+            title="Написать сообщение"
+            view="transparent"
+            class="contacts__btn"
+            @click-btn="formMessageOpen"
+          />
         </div>
 
         <!-- Карта -->
@@ -79,6 +90,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Форма написания сообщения -->
+    <Teleport to="body">
+      <UiNapisatSoobshenieForm ref="formMessage" />
+    </Teleport>
   </div>
 </template>
 

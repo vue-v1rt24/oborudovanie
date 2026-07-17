@@ -144,8 +144,6 @@ const clearFields = () => {
 }
 
 /*  */
-.product__title_price {
-}
 
 .product__title {
   font-family: var(--font-family);

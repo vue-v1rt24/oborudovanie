@@ -8,6 +8,13 @@ const animateHandler = () => {
     setTimeout(() => (isAnimated.value = false), 500);
   }
 };
+
+// Получить консультацию
+const formMessage = useTemplateRef('formMessage');
+
+const formMessageOpen = () => {
+  formMessage.value?.openModal();
+};
 </script>
 
 <template>
@@ -25,7 +32,7 @@ const animateHandler = () => {
 
         <!--  -->
         <div class="consultation__right">
-          <UiButton title="Получить консультацию" />
+          <UiButton title="Получить консультацию" @click-btn="formMessageOpen" />
 
           <UiButton
             @mouseenter="animateHandler"
@@ -38,6 +45,11 @@ const animateHandler = () => {
         </div>
       </div>
     </div>
+
+    <!-- Форма написания сообщения -->
+    <Teleport to="body">
+      <UiNapisatSoobshenieForm ref="formMessage" />
+    </Teleport>
   </section>
 </template>
 

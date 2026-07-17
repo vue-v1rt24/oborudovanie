@@ -10,6 +10,13 @@ const handleMouseEnter = () => {
     }, 500);
   }
 };
+
+// Получить консультацию
+const formMessage = useTemplateRef('formMessage');
+
+const formMessageOpen = () => {
+  formMessage.value?.openModal();
+};
 </script>
 
 <template>
@@ -23,9 +30,11 @@ const handleMouseEnter = () => {
 
         <!--  -->
         <UiButton
+          ref="formMessage"
           title="Получить консультацию"
           class="btn_arrow_long"
           @mouseenter="handleMouseEnter"
+          @click-btn="formMessageOpen"
         >
           <SvgArrowLong :class="{ animated: isAnimated }" />
         </UiButton>
@@ -37,6 +46,11 @@ const handleMouseEnter = () => {
         </div>
       </div>
     </div>
+
+    <!-- Форма написания сообщения -->
+    <Teleport to="body">
+      <UiNapisatSoobshenieForm ref="formMessage" />
+    </Teleport>
   </div>
 </template>
 

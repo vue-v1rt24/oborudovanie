@@ -84,7 +84,9 @@ const openModal = (product: Product) => {
     </div>
 
     <!--  -->
-    <UiProductModal :product="productSingle" ref="modalProduct" />
+    <Teleport to="body">
+      <UiProductModal :product="productSingle" ref="modalProduct" />
+    </Teleport>
   </section>
 </template>
 
