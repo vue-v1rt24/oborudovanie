@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['nuxt-viewport'],
+  modules: ['nuxt-viewport', 'vue-yandex-maps/nuxt'],
 
   /*  */
 
@@ -75,5 +75,10 @@ export default defineNuxtConfig({
       screen576: 576,
       screen320: 320,
     },
+  },
+
+  // Карта Яндекса
+  yandexMaps: {
+    apikey: 'f52ff3fc-0a45-4e8f-8507-e60a0a562e75',
   },
 }); // end defineNuxtConfig

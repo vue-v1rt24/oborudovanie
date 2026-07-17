@@ -74,7 +74,9 @@
         </div>
 
         <!-- Карта -->
-        <div class="contacts__cart"></div>
+        <div class="contacts__cart">
+          <UiMap />
+        </div>
       </div>
     </div>
   </div>
@@ -165,7 +167,7 @@
 /*  */
 
 .contacts__cart {
-  background-color: antiquewhite;
+  overflow: hidden;
 
   /* media */
   @media (max-width: 1200px) {
