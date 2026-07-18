@@ -48,7 +48,7 @@ const formMessageOpen = () => {
 
     <!-- Форма написания сообщения -->
     <Teleport to="body">
-      <UiNapisatSoobshenieForm ref="formMessage" />
+      <UiNapisatSoobshenieForm title="Получить консультацию" ref="formMessage" />
     </Teleport>
   </section>
 </template>

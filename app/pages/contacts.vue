@@ -93,7 +93,7 @@ const formMessageOpen = () => {
 
     <!-- Форма написания сообщения -->
     <Teleport to="body">
-      <UiNapisatSoobshenieForm ref="formMessage" />
+      <UiNapisatSoobshenieForm title="Написать сообщение" ref="formMessage" />
     </Teleport>
   </div>
 </template>

@@ -3,6 +3,11 @@ import { useVuelidate } from '@vuelidate/core';
 import { required, minLength, email, helpers } from '@vuelidate/validators';
 
 //
+defineProps<{
+  title: string;
+}>();
+
+//
 const modal = useTemplateRef('modal');
 
 const openModal = () => {
@@ -68,6 +73,11 @@ const clearFields = () => {
 <template>
   <UiModal ref="modal" @close-event="clearFields">
     <form @submit.prevent="submitHandler" class="product__form">
+      <div class="product__form__title">
+        {{ title }}
+      </div>
+
+      <!--  -->
       <UiFormMessageFormError :errors="v$.name.$errors">
         <UiFormInput label="Ваше имя" v-model="fields.name" />
       </UiFormMessageFormError>
@@ -81,7 +91,7 @@ const clearFields = () => {
       </UiFormMessageFormError>
 
       <UiFormMessageFormError :errors="v$.message.$errors">
-        <UiFormTextarea label="Вопрс" v-model="fields.message" />
+        <UiFormTextarea label="Сообщение" v-model="fields.message" />
       </UiFormMessageFormError>
 
       <!--  -->
@@ -105,6 +115,11 @@ const clearFields = () => {
   flex-direction: column;
   row-gap: 30px;
   padding: 60px 30px 30px 30px;
+
+  /* media */
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 }
 
 /*  */

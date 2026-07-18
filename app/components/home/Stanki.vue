@@ -30,7 +30,6 @@ const formMessageOpen = () => {
 
         <!--  -->
         <UiButton
-          ref="formMessage"
           title="Получить консультацию"
           class="btn_arrow_long"
           @mouseenter="handleMouseEnter"
@@ -49,7 +48,7 @@ const formMessageOpen = () => {
 
     <!-- Форма написания сообщения -->
     <Teleport to="body">
-      <UiNapisatSoobshenieForm ref="formMessage" />
+      <UiNapisatSoobshenieForm title="Получить консультацию" ref="formMessage" />
     </Teleport>
   </div>
 </template>
